@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="650"
+     viewBox="0 0 1200 650">
+
+  <style>
+    .box {
+      fill: #f5f5f5;
+      stroke: #333;
+      stroke-width: 2;
+      rx: 12;
+    }
+
+    .title {
+      font-family: Arial, sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      text-anchor: middle;
+    }
+
+    .text {
+      font-family: Arial, sans-serif;
+      font-size: 17px;
+      text-anchor: middle;
+    }
+
+    .arrow {
+      stroke: #333;
+      stroke-width: 2;
+      marker-end: url(#arrowhead);
+    }
+  </style>
+
+  <defs>
+    <marker id="arrowhead"
+            markerWidth="10"
+            markerHeight="7"
+            refX="9"
+            refY="3.5"
+            orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+  </defs>
+
+  <!-- Trigger -->
+
+  <rect class="box" x="425" y="30" width="350" height="80"/>
+  <text class="title" x="600" y="62">
+    CloudWatch / EventBridge
+  </text>
+  <text class="text" x="600" y="90">
+    Scheduled / Event Trigger
+  </text>
+
+  <!-- Lambda 1 -->
+
+  <rect class="box" x="80" y="180" width="400" height="100"/>
+  <text class="title" x="280" y="220">
+    Lambda Function 1
+  </text>
+  <text class="text" x="280" y="250">
+    Orphan Snapshot Cleanup
+  </text>
+
+  <!-- Lambda 2 -->
+
+  <rect class="box" x="720" y="180" width="400" height="100"/>
+  <text class="title" x="920" y="220">
+    Lambda Function 2
+  </text>
+  <text class="text" x="920" y="250">
+    30-Day Snapshot Cleanup
+  </text>
+
+  <!-- EC2 / EBS -->
+
+  <rect class="box" x="80" y="350" width="400" height="100"/>
+  <text class="title" x="280" y="390">
+    EC2 / EBS
+  </text>
+  <text class="text" x="280" y="420">
+    Instances • Volumes • Snapshots
+  </text>
+
+  <!-- Snapshot -->
+
+  <rect class="box" x="720" y="350" width="400" height="100"/>
+  <text class="title" x="920" y="390">
+    EBS Snapshots
+  </text>
+  <text class="text" x="920" y="420">
+    Check Snapshot Creation Date
+  </text>
+
+  <!-- Cost -->
+
+  <rect class="box" x="400" y="520" width="400" height="80"/>
+  <text class="title" x="600" y="553">
+    Cost Optimization
+  </text>
+  <text class="text" x="600" y="580">
+    Remove Unnecessary Snapshots
+  </text>
+
+  <!-- Arrows -->
+
+  <line class="arrow" x1="520" y1="110" x2="350" y2="180"/>
+  <line class="arrow" x1="680" y1="110" x2="850" y2="180"/>
+
+  <line class="arrow" x1="280" y1="280" x2="280" y2="350"/>
+  <line class="arrow" x1="920" y1="280" x2="920" y2="350"/>
+
+  <line class="arrow" x1="400" y1="450" x2="500" y2="520"/>
+  <line class="arrow" x1="800" y1="450" x2="700" y2="520"/>
+
+</svg>

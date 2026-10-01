@@ -1,0 +1,22 @@
+# AWS credentials and private keys
+.aws/
+*.pem
+*.ppk
+credentials
+
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
